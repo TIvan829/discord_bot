@@ -15,7 +15,7 @@ bot = commands.Bot(help_command=None, intents=discord.Intents.all())
 async def on_ready():
     print(f">>{bot.user}上線<<")
     while True:
-        game = discord.Game(f"機器人製作中")
+        game = discord.Game("機器人製作中")
         await bot.change_presence(status=discord.Status.online, activity=game)
 
 
